@@ -1,0 +1,43 @@
+USER: ||your_code_goes_here_in_user_prompt||
+
+TASK:
+We start anew...
+Re-structured fidelity.
+Track the logic, write it down.
+Track functions, variables, structures and other code like entities, write them down.
+It's so easy when you are re-factoring code to fall into that sense of complacency therefore failing at your task.
+Consider that I would not be asking you to re-factor it for me if I had not already tried myself multiple times unsuccessfully.
+Therefore there are obviously nuances in this code which are not obvious, find them, write those down. 
+Re-factor the code into a precise, 1:1 drop-in re=factored module replacements.
+Before you re-factor... determine the flow of the code... to help you with how you re-factor.
+Exact 1:1 logic equivalence.
+Let's say that again, verified, logic checked, re-flowed, 1:1 equivalence.
+Zero side-effects alteration, zero ambiguity.
+Include basic in-line comments.
+Success is a 1:1 drop-in replacement that holds under significant refactoring and proves itself with cross-checked, zero side-effects identical fidelity.
+This is part of a massively larger code-base so you must ensure the drop in replacement and cannot take liberties with your approach.
+REMEMBER: Everything can be re-factored, should be re-factored, even helpers. Replace existing function definitions with a STUB function that points to our re-factored function where required.
+If a function is more than 100 lines long then you should probably think about that.... as in it should be broken down into key logical parts as who can understand 100 lines of code properly, I am not a robot.
+Also, re-factor the helpers... this is an entire re-factoring not some brevity exercise.
+If you are not sure, write out a detailed plan first.
+Re-factor the code.
+Ensure it works as a drop in replacement.
+Include un-changed functions in your response so your response is entirely complete.
+Don't be changing the type of code, if it's a module, keep it like that, a header, keep it that, a package, or maybe it is just in-line code.. keep that...as we are dropping in, remember? So the fundamentals are granite.
+Include basic in-line comments as well as more detailed notes as needed...if...
+...if something is contradictory then note in the comments but your task is to replicate even contradictions not make judgement calls. 
+Let's call it re-structured fidelity.
+Note things without changing things, probably lots of counter-intuitive logic in the supplied code base... this is actually one of your biggest challenges - to resist the automated urge to follow your training applying obvious generalized fixes to the code.... whilst that is probably right it also probably breaks all the other master-code which you've not been supplied... Nevertheless... you must identify these "bugs", and counter-intuitively, replicate them - comment them - in the next phase we shall fix them, just not now. I mean who knows if a STDOUT LOG message isn't being monitored by a separate 'tail' process and even modifying duplication of logging could cause unknown undesired side-effects... you just can't take that chance... not because we don't know but because the user hasn't bothered to give us the entire code base so we'll need to work in isolation and assume the worst in all cases! STDOUT is an edge case fidelity example, yet, I mean, that is the problem; we just don't have oversight of the big picture so we need to work with it. we'll see this is a working reality not some sort of constraint. 
+Track scope, is that variable actually defined in my new re-structured scope as maybe it was in the original code yet my re-structure changes variable scope, function scope, hash scope, async code. When we reference a code block or a variable then it must be available or in-scope within the re-structure which may differ from the original scope.
+Some more edge cases, feeding into scope, are parameters of a sub-routine, an 'if' statement, like a function, or definition, or sub-routine... it might be that a passed/parsed parameter is not utilized yet is included... So maybe the developer intended that as they shall extend that module later using that un-used parameter... it is so annoying the user hasn't shared the entire code-base yet this is our working reality and we need to navigate the consequences in a positive, fidelity mind-set always. 
+Keep things simple like perform the assignment before the function call. Check logic-paths, scope. Sometimes when we log or print something we might miss the logical assignments... let's watch track the differences to ensure our code actually works.
+As well, when you re-factor them as the legacy code was one big spaghetti, and the re-structured code is not.. then the dependencies of the spaghetti probably need fixing in the re-structure... what return values does the new helper re-structure need that combines with the original spaghetti... These things need to be considered deeply.
+The above are my expectations, beyond this it's all down to you... I'll just have to trust your plan as if I had my own then I wouldn't need to ask for yours.
+SO, it must be a success.
+Check your work carefully, the code likely has bugs which need replicating; assume nothing, the task is to genuinely replicate nonsense if that is what is required.
+At a minimum, whilst feeling free to do more, depending on the codebase, you must test the re-structured code you shall output with in-built tools such as pylint, perlcritic, clippy, cppcheck, clang-tidy, eslint, shellcheck, rubocop.
+It would be a crime to deliver me code which doesn't even pass a syntax tool test.
+Let's go, formulate your check/list/plan, then, move straight into the refactored code... even the helpers.
+Not the most important, but fun to provide some final stats on what you did, like how well you performed overall, stats, numbers, commentary.
+
+Re-output the entire corrected codebase, cross-check, double-blind:
