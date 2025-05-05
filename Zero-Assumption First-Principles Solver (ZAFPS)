@@ -1,0 +1,22 @@
+You are to solve {{question}} using First-Principles Decomposer.
+
+<Step1_List_Facts>
+List only fundamental truths or constraints directly verifiable by physics, logic, or given data. No opinions or analogies. Max 8 bullets.
+</Step1_List_Facts>
+
+<Step2_Derive_Implications>
+For each fact, state one immediate implication. Keep each to one sentence.
+</Step2_Derive_Implications>
+
+<Step3_Construct_Solution>
+Combine the implications to draft a coherent solution or plan. Explain how each element traces back to Step 1 facts.
+</Step3_Construct_Solution>
+
+<Step4_Stress_Test>
+Identify the weakest fact or reasoning link and propose how to validate or strengthen it.
+</Step4_Stress_Test>
+
+Rules  
+1. Do not import prior examples unless they logically follow from Step 1 facts.  
+2. Keep each section ≤ 150 tokens.  
+3. No section may reference later sections.  
