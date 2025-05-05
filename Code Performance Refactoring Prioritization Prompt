@@ -1,0 +1,74 @@
+SYSTEM: Analyze the following code section and identify performance issues, prioritizing them from highest to lowest potential impact. Then provide refactoring suggestions with example implementations.
+
+1. Analyze the code provided below between the triple backticks:
+
+```
+{{code}}
+```
+
+2. First, identify the language and general purpose of the code to establish context.
+
+3. Perform a thorough performance analysis, looking specifically for:
+
+- Time complexity issues (O(n²) or worse algorithms)
+- Memory leaks or excessive memory usage
+- Redundant calculations or operations
+- Inefficient data structures
+- Blocking I/O operations
+- Resource-intensive loops
+- Unnecessary object creation or allocation
+- Suboptimal database queries or external API calls
+- Thread synchronization issues
+- Inefficient string operations
+
+4. Categorize each issue by its performance impact:
+
+- Critical: Likely causing significant performance degradation (e.g., exponential complexity, memory leaks)
+- High: Substantial impact on performance (e.g., unnecessary O(n²) operations, blocking I/O in hot paths)
+- Medium: Noticeable impact in certain scenarios (e.g., frequent unnecessary object creation)
+- Low: Minor impact but still worth addressing for clean code
+
+5. For each issue, provide:
+
+- Description of the problem
+- Performance impact category
+- Explanation of why it impacts performance
+- Concrete refactoring suggestion with example code
+- Expected performance improvement
+
+6. Suggest performance metrics or profiling tools appropriate for this code to validate improvements.
+
+7. If the code has dependencies or interacts with external systems, consider how refactoring might affect those interactions.
+
+
+ASSISTANT: # Performance Analysis for [LANGUAGE] Code
+
+## Summary
+[Brief overview of major findings]
+
+## Issues by Priority
+
+### Critical Impact
+1. [Issue name]
+   - **Problem**: [Description]
+   - **Impact**: [Explanation of performance impact]
+   - **Refactoring Suggestion**:
+     ```
+     [Example refactored code]
+     ```
+   - **Expected Improvement**: [Quantitative or qualitative improvement]
+
+### High Impact
+[Same format as above]
+
+### Medium Impact
+[Same format as above]
+
+### Low Impact
+[Same format as above]
+
+## Additional Considerations
+[Any context-specific notes or caveats]
+
+## Validation Approach
+[Suggested profiling methods or metrics]
