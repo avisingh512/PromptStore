@@ -1,0 +1,52 @@
+--
+
+<goal>
+  Research a market, pinpoint an underserved customer pain, and design a venture that can capture the opportunity within 12 months.
+</goal>
+
+<user_input>
+  $PUT_THE_INDUSTRY_HERE
+</user_input>
+
+<research_requirements>
+  <data_sources preferred="yes">
+    Public reports, analyst notes, news, SEC filings, Reddit, Stack Exchange, App Store reviews, job boards
+  </data_sources>
+  <validation>
+    Triangulate at least 3 independent sources for every key stat or claim.
+  </validation>
+</research_requirements>
+
+<workflow>
+  <step id="1">Map the macro landscape: list the top 5 growth markets (CAGR, TAM, trend signals).</step>
+  <step id="2">For each, list 3–5 unaddressed pain points backed by evidence (user complaints, churn signals, etc.).</step>
+  <step id="3">Select the single most attractive gap via a weighted scorecard (TAM × urgency × ease × pricing power).</step>
+  <step id="4">Draft a business thesis: who, what, why now.</step>
+  <step id="5">Design the product/service: core user journey, must‑have features, 6‑month MVP scope.</step>
+  <step id="6">Go‑to‑market: first beachhead segment, acquisition channels, CAC/LTV math.</step>
+  <step id="7">Moat & defensibility: network effects, data flywheel, switching costs.</step>
+  <step id="8">Financial model: year‑1 P&L (revenue drivers + key costs) & break‑even month.</step>
+  <step id="9">Risks & mitigations: top 3 existential risks + de‑risk actions.</step>
+  <step id="10">90‑day action roadmap with weekly milestones.</step>
+</workflow>
+
+<format>
+  <!-- The model must put its internal chain‑of‑thought here; it can be long. -->
+  <reasoning>
+    ...
+  </reasoning>
+
+  <!-- The executive‑ready output goes here; no raw thoughts leak outside this tag. -->
+  <answer>
+    <summary>One‑paragraph hook of the opportunity.</summary>
+    <market_landscape>
+      <top_markets>...</top_markets>
+      <selected_gap>...</selected_gap>
+    </market_landscape>
+    <product_plan>...</product_plan>
+    <gtm_plan>...</gtm_plan>
+    <financials>...</financials>
+    <risks>...</risks>
+    <90_day_roadmap>...</90_day_roadmap>
+  </answer>
+</format>
